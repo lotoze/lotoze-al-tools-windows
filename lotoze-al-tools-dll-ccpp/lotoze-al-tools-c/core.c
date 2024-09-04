@@ -6,10 +6,11 @@
 #include "core.h"
 
 
+
 // 这是导出变量的一个示例
 LOTOZEALTOOLSCORE_API int nlotozealtoolsc=0;
 
-// 这是导出函数的一个示例。
+// 这是导出函数的一个示例
 LOTOZEALTOOLSCORE_API int fnlotozealtoolsc(void)
 {
     return 0;

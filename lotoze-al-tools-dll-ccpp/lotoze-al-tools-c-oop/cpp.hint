@@ -1,0 +1,2 @@
+#define LOTOZEALTOOLSCOOP_API __declspec(dllexport)
+#define LOTOZEALTOOLSCOOP_API __declspec(dllimport)

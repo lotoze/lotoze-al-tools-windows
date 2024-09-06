@@ -17,3 +17,41 @@ LOTOZEALTOOLSCORE_API int fnlotozealtoolsc(void)
 }
 
 
+/**
+ * 空指针比较函数.
+ * 
+ * \param type 1=int
+ * \param a
+ * \param b
+ * \return 
+ */
+int voidCompare(int type, void* a, void* b) {
+    // 这里需要根据实际数据类型来实现比较逻辑
+    // 例如，如果数据类型是 int，可以这样比较：
+    // return *(int*)a == *(int*)b;
+    // 如果是其他类型，需要相应地实现比较逻辑
+
+    int result = 0; // 1为相等，2为a>b，-2为a<b
+
+
+
+    switch (type){
+        case 1:
+            if (*(int*)a == *(int*)b) {
+                return 1;
+            } else if (*(int*)a > *(int*)b) {
+                return 2;
+            } else if (*(int*)a < *(int*)b) {
+                return -2;
+            }
+     
+        default:
+            break;
+    }
+
+
+    return 0;
+    
+}
+
+
